@@ -1,5 +1,5 @@
 export const productData = async () => {
-  const response = await fetch("http://127.0.0.1:8000/product/", {
+  const response = await fetch("https://jahanyadak.iran.liara.run/product/", {
     next: { revalidate: 10 },
   });
   const data = await response.json();
