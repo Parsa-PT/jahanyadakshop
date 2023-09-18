@@ -1,0 +1,12 @@
+.enginbg{
+    background-image: url('../../public/assets/bestchoice/engine_oil_hero.webp');
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
+.radiatorbg{
+    background-image: url('../../public/assets/bestchoice/ABE-breaks_01.webp');
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
