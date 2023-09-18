@@ -1,6 +1,6 @@
 export const AddShipping = async (data) => {
   if (data.address || data.nocode || data.city || data.capital !== "") {
-    await fetch("http://127.0.0.1:8000/shipping/", {
+    await fetch("https://jahanyadak.iran.liara.run/shipping/", {
       method: "POST",
       body: JSON.stringify({
         address: data.address,
@@ -35,7 +35,7 @@ export const CreateNewUser = async (data) => {
     data.password1 ||
     data.password2 !== ""
   ) {
-    await fetch("http://127.0.0.1:8000/register/", {
+    await fetch("https://jahanyadak.iran.liara.run/register/", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -61,7 +61,7 @@ export const GetToken = async (data) => {
   let result = {}
 
   if (data.username || data.password !== "") {
-    await fetch("http://127.0.0.1:8000/api/token/", {
+    await fetch("https://jahanyadak.iran.liara.run/api/token/", {
       method: "POST",
       body: JSON.stringify({
         username: data.username,
